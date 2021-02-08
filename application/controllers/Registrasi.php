@@ -14,10 +14,10 @@ class Registrasi extends CI_Controller
 	public function index()
 	{
 		// Get registrasi data
-		$data['registrasi'] = $this->Model_registrasi->get();
+		$data_registrasi['registrasi'] = $this->Model_registrasi->get();
 
 		// Load view page
-		$this->load->view('registrasi/index', $data);
+		$this->load->view('registrasi/index', $data_registrasi);
 	}
 
 	// @route		GET registrasi/add
