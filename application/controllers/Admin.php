@@ -217,7 +217,7 @@ class Admin extends CI_Controller
 
 			// rediret to admin index page
 			redirect('admin');
-		} else {
+		} else if(empty ($admin)) {
 			// Login Failed
 
 			// Set flashdata
